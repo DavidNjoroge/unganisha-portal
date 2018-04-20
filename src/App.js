@@ -1,18 +1,49 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+//import Map from './Components/Map/Map'
 import './App.css';
+import  { compose, withProps } from "recompose";
+import {
+  withScriptjs,
+  withGoogleMap,
+  GoogleMap,
+  FusionTablesLayer,
+} from "react-google-maps";
+
+const MapWithAFusionTablesLayer = compose(
+  withProps({
+    googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg&v=3.exp&libraries=geometry,drawing,places",
+    loadingElement: <div style={{ height: `100%` }} />,
+    containerElement: <div style={{ height: `400px` }} />,
+    mapElement: <div style={{ height: `100%` }} />,
+  }),
+  withScriptjs,
+  withGoogleMap
+)(props =>
+  <GoogleMap
+    defaultZoom={11}
+    defaultCenter={{ lat: 41.850033, lng: -87.6500523 }}
+  >
+    <FusionTablesLayer
+      url="http://googlemaps.github.io/js-v2-samples/ggeoxml/cta.kml"
+      options={{
+        query: {
+          select: `Geocodable address`,
+          from: `1mZ53Z70NsChnBMm-qEYmSDOvLXgrreLTkQUvvg`
+        }
+      }}
+    />
+  </GoogleMap>
+);
+
+
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <MapWithAFusionTablesLayer />
+        {/*<Map/>*/}
       </div>
     );
   }
