@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-//import Map from './Components/Map/Map'
+import Logo from './Components/Logo/Logo';
 import './App.css';
 import  { compose, withProps } from "recompose";
+import 'tachyons';
 import {
   withScriptjs,
   withGoogleMap,
@@ -13,7 +14,7 @@ const MapWithAFusionTablesLayer = compose(
   withProps({
     googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg&v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `400px` }} />,
+    containerElement: <div className= 'fl w-third' style={{ height: `400px`, width:`100%`  }} />,
     mapElement: <div style={{ height: `100%` }} />,
   }),
   withScriptjs,
@@ -42,8 +43,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <Logo/>
       <MapWithAFusionTablesLayer />
-        {/*<Map/>*/}
       </div>
     );
   }
