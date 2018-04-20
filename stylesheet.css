@@ -18,7 +18,8 @@ body{
     left: 0;
     right: 0;
 }#map iframe{
-    position: fixed;
+    position: fixed;3
+    
     bottom: 0;
 }
 
