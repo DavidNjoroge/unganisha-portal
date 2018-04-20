@@ -6,12 +6,15 @@ import registerServiceWorker from './registerServiceWorker';
 import Store from './store/store'
 import thunk from 'redux-thunk'
 import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom'
 
 const StoreInstance = Store()
 
 ReactDOM.render(
     <Provider store={StoreInstance}>
-        <App />
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
     </Provider>
 , document.getElementById('root'));
 registerServiceWorker();
