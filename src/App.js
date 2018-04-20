@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import Logo from './Components/Logo/Logo';
+import Register from './Components/Register/Register';
+import Signin from './Components/Signin/Signin';
 import './App.css';
+import Navigation from './Components/Navigation/Navigation';
+import Heading from './Components/Heading/Heading';
 import  { compose, withProps } from "recompose";
 import 'tachyons';
 import {
@@ -43,7 +47,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <Register/>
+      <Signin/>
+      <Navigation/>
       <Logo/>
+      <Heading/>
       <MapWithAFusionTablesLayer />
       </div>
     );
