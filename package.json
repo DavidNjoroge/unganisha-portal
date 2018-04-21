@@ -38,7 +38,7 @@
     "url": "https://github.com/DavidNjoroge/unganisha-portal/issues"
   },
   "engines": {
-    "node": "8.3.0"
+    "node": "6.10.1"
   },
   "homepage": "https://github.com/DavidNjoroge/unganisha-portal#readme"
 }
