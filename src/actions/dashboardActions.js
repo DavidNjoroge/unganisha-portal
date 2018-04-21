@@ -16,7 +16,7 @@ export function ambulanceData(payload){
 
 export function loadRequest() {
     return dispatch => {
-        return {first:axios.get('http://unganisha-b.herokuapp.com/api').then(res=>{
+        return {first:axios.get('https://unganisha-b.herokuapp.com/api').then(res=>{
             console.log("requests loaded",res);
             
             dispatch(requestData(res.data))
