@@ -19,7 +19,7 @@ import { MarkerClusterer } from "react-google-maps/lib/components/addons/MarkerC
 
 const MapWithAFusionTablesLayer = compose(
     withProps({
-      googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg&v=3.exp&libraries=geometry,drawing,places",
+      googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyCKVs5mrG5cEzlloTEYBHcF4O2Dvlg6gLQ&v=3.exp&libraries=geometry,drawing,places",
       loadingElement: <div style={{ height: `100%` }} />,
       containerElement: <div className= 'fl w-third' style={{ height: `100vh`, width:`100%`  }} />,
       mapElement: <div style={{ height: `100%` }} />,
