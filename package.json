@@ -19,5 +19,20 @@
   },
   "devDependencies": {
     "tachyons": "^4.9.1"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidNjoroge/unganisha-portal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidNjoroge/unganisha-portal/issues"
+  },
+  "engines": {
+    "node": "8.3.0"
+  },
+  "homepage": "https://github.com/DavidNjoroge/unganisha-portal#readme"
 }
