@@ -48,7 +48,7 @@ const mapStateToProp = state =>{
   }
 }
 SidebarRight.propTypes = {
-  ambulances:PropTypes.array,
+  ambulances:PropTypes.object,
 
 }
 

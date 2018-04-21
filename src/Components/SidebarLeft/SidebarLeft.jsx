@@ -52,7 +52,7 @@ const mapStateToProp = state =>{
   }
 }
 SidebarLeft.propTypes = {
-  requ:PropTypes.array,
+  requ:PropTypes.object,
 
 }
 

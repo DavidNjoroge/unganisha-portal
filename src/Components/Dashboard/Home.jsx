@@ -112,8 +112,8 @@ const mapStateToProp = state =>{
     }
 }
 Home.propTypes = {
-    requ:PropTypes.array,
-    ambulances:PropTypes.array
+    requ:PropTypes.object,
+    ambulances:PropTypes.object
 
 }
 export default connect(mapStateToProp,{loadRequest})(Home)
