@@ -14,8 +14,8 @@ import {
 import {connect} from 'react-redux'
 import PropTypes from 'prop-types'
 import {loadRequest} from '../../actions/dashboardActions'
-// const { MarkerClusterer } from "react-google-maps/lib/components/addons/MarkerClusterer");
-import { MarkerClusterer } from "react-google-maps";
+// const MarkerClusterer = require("react-google-maps/lib/components/addons/MarkerClusterer");
+import { MarkerClusterer } from "react-google-maps/lib/components/addons/MarkerClusterer";
 
 const MapWithAFusionTablesLayer = compose(
     withProps({
