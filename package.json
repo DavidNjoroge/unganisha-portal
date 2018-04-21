@@ -22,9 +22,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build"
   },
   "devDependencies": {
+    "gh-pages": "^1.1.0",
     "tachyons": "^4.9.1"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
@@ -39,7 +42,8 @@
     "url": "https://github.com/DavidNjoroge/unganisha-portal/issues"
   },
   "engines": {
-    "node": "6.10.1"
+    "node": "8.5.0"
   },
-  "homepage": "https://github.com/DavidNjoroge/unganisha-portal#readme"
+  "homepage": "https://davidnjoroge.github.io/unganisha-portal"
+  
 }

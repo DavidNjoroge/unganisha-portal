@@ -14,7 +14,8 @@ import {
 import {connect} from 'react-redux'
 import PropTypes from 'prop-types'
 import {loadRequest} from '../../actions/dashboardActions'
-const { MarkerClusterer } = require("react-google-maps/lib/components/addons/MarkerClusterer");
+// const { MarkerClusterer } from "react-google-maps/lib/components/addons/MarkerClusterer");
+import { MarkerClusterer } from "react-google-maps";
 
 const MapWithAFusionTablesLayer = compose(
     withProps({
@@ -31,7 +32,6 @@ const MapWithAFusionTablesLayer = compose(
       defaultCenter={{ lat: -1.2833, lng: 36.81667   }}
     > 
     <MarkerClusterer
-      onClick={props.onMarkerClustererClick}
       averageCenter
       enableRetinaIcons
       gridSize={60}
@@ -64,12 +64,6 @@ class Home extends Component {
         
     }
   render() {
-    //   let marks = props.isMarkerShown && <Marker position={{ lat: -1.2731795, lng: 36.8600088000001 }} />
-    //   for (let item of this.state.ambulances){
-    //       marks.push(
-    //         props.isMarkerShown && <Marker position={{ lat: -1.2731795, lng: 36.8600088000001 }} />
-    //       )
-    //   }
     return (
       <div>
         <div className="container-fluid">
